@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let arr = [2, 3, 4, 5];
+        let pattern = true;
+        for (i = 0; i < arr.length; i++) {
+
+            if (i % 2 === 0) {
+                if (arr[i] % 2 === 0) {
+                }
+                else {
+                    pattern = false
+                }
+            }
+            else {
+                if (arr[i] % 2 !== 0) {
+                }
+                else {
+                    pattern = false
+                }
+            }
+        }
+        if (pattern) {
+            console.log("pattern followed")
+        }
+        else {
+            console.log("pattern broken")
+        }
+
+
+
+    </script>
+</body>
+
+</html>

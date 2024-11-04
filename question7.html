@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let salesTarget = parseFloat(prompt("Enter the sales percentage"));
+        let monthlySalary = parseFloat(prompt("Enter your salary:"));
+        if(salesTarget > 120){
+            bonus = 20/100*monthlySalary;
+            console.log(`Bonus of the empployee = ${bonus}`);
+        }
+        else if(salesTarget>=100 && salesTarget<=120){
+            bonus = 10/100*monthlySalary;
+            console.log(`Bonus of the employee = ${bonus}`);
+        }
+        else if(salesTarget<100){
+            console.log("No bonus");
+        }
+        else{
+            console.log("Enter valid input");
+        }
+            </script>
+</body>
+</html>

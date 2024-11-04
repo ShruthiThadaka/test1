@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // let string = prompt("Enter the string");
+        // let pattern = true;
+        // for(i=0;i<string.length;i++){
+        //     if(i%2==0){
+        //         // if(string[i]=='a'||string[i]=='e'||string[i]=='i'||string[i]=='o'||string[i]=='u'){
+
+        //         // } 
+        //         // else{
+        //         //     pattern=false;
+        //         // }
+        //         if(string[i]!='a'||string[i]!='e'||string[i]!='i'||string[i]!='o'||string[i]!='u'){
+        //             pattern=false;
+        //         } 
+
+        //     }
+        //     else{
+        //         // if(string[i]!='a'||string[i]!='e'||string[i]!='i'||string[i]!='o'||string[i]!='u'){
+
+        //         // } 
+        //         // else{
+        //         //     pattern=false;
+        //         // }
+        //         if(string[i]=='a'||string[i]=='e'||string[i]=='i'||string[i]=='o'||string[i]=='u'){
+        //             pattern=false;
+        //     } 
+
+
+        //     }
+        // }
+        // if(pattern){
+        //     console.log("Pattern followed");
+        // }
+        // else{
+        //     console.log("Pattern not followed");
+        // }
+
+        let string = prompt("Enter the string").toLowerCase();
+        let pattern = true;
+        for (let i = 0; i < string.length; i++) {
+            if (i % 2 === 0) {
+                if (string[i] !== "a" || string[i] !== "e" || string[i] !== "i" || string[i] !== "o" || string[i] !==
+                    "u") {
+                    pattern = false;
+                }
+            } else {
+                if (string[i] === "a" || string[i] === "e" || string[i] === "i" || string[i] === "o" || string[i] === "u") {
+                    pattern = false;
+                }
+            }
+        }
+        if (pattern) {
+            console.log("Pattern followed");
+        } else {
+            console.log("Pattern broken");
+        }
+    </script>
+</body>
+
+</html>

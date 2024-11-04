@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var lateDays = parseInt(prompt("Enter number of late days:"));
+        if(lateDays >= 1 && lateDays <= 5){
+            console.log(`The fine is ${lateDays*2}` );
+        }
+        else if(lateDays >= 6 && lateDays <=10){
+            console.log(`The fine is ${lateDays*3}`);
+        }
+        else{
+            console.log(`The fine is ${lateDays*5}`);
+        }
+
+    </script>
+</body>
+</html>
